@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <img src="images/profile.jpg" alt="Vamika M Profile Photo" class="profile-photo">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm VAMIKA M<br><br>Front-end developer</p>
+    <button onclick="window.location='#projects'">See My Work</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a motivated learner of HTML, CSS, and Javascript with expertise in leveraging React and Bootstrap to create responsive web applications.<br> I'm eager to contribute to front-end development projects and am always honing my craft to produce top-notch work.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <h3>BREAST CANCER DETECTION</h3>
+        <p>Developed a machine learning model for breast cancer detection by analyzing medical data to classify tissue as benign or malignant. Implemented algorithms to enhance diagnostic accuracy and support early detection. The project improved predictive efficiency and contributed to better patient outcomes.</p>
+      </div>
+      <div class="project-item">
+        <h3>INTRUSION DETECTION SYSTEM</h3>
+        <p>Developed an Intrusion Detection System using anomaly detection techniques to identify unusual network activities. Leveraged machine learning algorithms to detect potential security threats and prevent unauthorized access. The project enhanced system security by improving real-time threat detection and response capabilities.</p>
+      </div>
+      <div class="project-item">
+        <h3>RED STREAM BLOOD DONOR SYSTEM</h3>
+        <p>Developed "Red Stream," a platform to connect blood donors with recipients in need, streamlining the donation process. Implemented features to locate nearby donors, manage requests, and facilitate timely blood donations. The project aimed to enhance accessibility and save lives through efficient donor-recipient matching.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at:</p>
+    <ul>
+      <li>Email: <a href="mailto:vamikamuthukumar147@gmail.com">vamikamuthukumar147@gmail.com</a></li>
+      <li>Phone: <a href="tel:6382797652">6382797652</a></li>
+      <li>LinkedIn: <a href="www.linkedin.com/in/vamika-muthukumar-465544258" target="_blank">linkedin.com/in/vamika-muthukumar</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Vamika M. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

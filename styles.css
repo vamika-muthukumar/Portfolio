@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Darker gradient background */
+    color: #fff; /* White text for contrast */
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-link {
+    color: white;
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  /* Home Section */
+  .home {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .profile-photo {
+    width: 500px; /* Increased width for a much larger photo */
+    height: 500px; /* Increased height for a much larger photo */
+    border-radius: 50%; /* Keeps the photo circular */
+    object-fit: cover; /* Ensures the image fills the circular space without distortion */
+    margin: 20px auto;
+    display: block;
+    border: 4px solid #fff; /* Adds a white border around the photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .profile-photo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhances the shadow on hover */
+  }
+    
+  /* About Section */
+  .about {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Projects Section */
+  .projects {
+    background-color: #1e2a34; /* Dark blue-gray background for the projects section */
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+  
+  .projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  /* Project List */
+  .project-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-item {
+    background-color: #2d3b42; /* New background color for project boxes */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    height: 300px; /* Set a fixed height for uniform project cards */
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .project-item h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff; /* White color for text inside the project cards */
+  }
+  
+  .project-item p {
+    font-size: 16px;
+    color: #ddd; /* Light gray color for text inside the project cards */
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .project-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-item {
+      width: 90%;
+      height: auto;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-link {
+      margin: 10px 0;
+    }
+  }
+  
